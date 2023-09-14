@@ -15,7 +15,7 @@ const {
 
 async function assignRandomCategory() {
     const connection = await mongoose.connect(
-        `mongodb+srv://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_CLUSTER}/${DATABASE_NAME}?retryWrites=true&w=majority`, {
+        `mongodb://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_CLUSTER}/${DATABASE_NAME}??retryWrites=true&w=majority`, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });

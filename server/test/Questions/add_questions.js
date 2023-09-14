@@ -52,14 +52,6 @@ async function createQuestion(user) {
 }
 
 async function addQuestions(count) {
-    const connection = await mongoose.connect(
-        `mongodb+srv://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_CLUSTER}/${DATABASE_NAME}?retryWrites=true&w=majority`, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-    
-    console.log('Connected to database');
-
     let filepath = path.join(path.dirname(path.dirname(__filename)), 'data.json');
     let data = JSON.parse(fs.readFileSync(filepath).toString());
     let users = data.users;

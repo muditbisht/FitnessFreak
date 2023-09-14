@@ -26,12 +26,6 @@ async function add_following(username1, username2) {
 
 async function add_random_followings(num) {
 
-    const connection = await mongoose.connect(
-        `mongodb+srv://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_CLUSTER}/${DATABASE_NAME}?retryWrites=true&w=majority`, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-
     let filepath = path.join(path.dirname(path.dirname(__filename)), 'data.json');
     console.log('File path: ', filepath);
     let data = JSON.parse(fs.readFileSync(filepath).toString());
