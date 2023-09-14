@@ -1,8 +1,8 @@
 {
     "PRODUCTION": {
-        "SERVER_DOMAIN": "https://fitnessfreakapp.herokuapp.com", 
-        "API_DOMAIN" : "https://fitnessfreakapp.herokuapp.com/api",
-        "CLIENT_DOMAIN" : "https://fitnessfreakapp.herokuapp.com",
+        "SERVER_DOMAIN": "https://fitnessfreak-8d7d7b2e193e.herokuapp.com", 
+        "API_DOMAIN" : "https://fitnessfreak-8d7d7b2e193e.herokuapp.com/api",
+        "CLIENT_DOMAIN" : "https://fitnessfreak-8d7d7b2e193e.herokuapp.com",
         "CLOUDINARY_CLOUD_NAME": "drc8u0jpr",
         "CLOUDINARY_API_KEY": "439496878484438"
     },
